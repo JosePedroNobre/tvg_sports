@@ -14,27 +14,9 @@ class EventScreenCubit extends Cubit<EventScreenState> {
     try {
       emit(EventScreenLoading());
       var allEvents = await repository.getEvents();
-
-      DateTime now = DateTime.now();
-      DateTime filterDate;
-
-      switch (dateFilter) {
-        case DateFilter.today:
-          filterDate = DateTime(now.year, now.month, now.day);
-          break;
-        case DateFilter.yesterday:
-          filterDate = now.subtract(const Duration(days: 1));
-          break;
-        case DateFilter.tomorrow:
-          filterDate = now.add(const Duration(days: 1));
-          break;
-      }
-
       var filteredEvents = allEvents.where((event) {
-        DateTime eventDate = DateTime.parse(event.dateStarting);
-        return eventDate.year == filterDate.year &&
-            eventDate.month == filterDate.month &&
-            eventDate.day == filterDate.day;
+        String eventDate = event.dateStarting;
+        return eventDate == dateFilter.name;
       }).toList();
 
       emit(EventScreenLoaded(filteredEvents));

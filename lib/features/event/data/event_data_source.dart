@@ -2,20 +2,24 @@ import 'package:tvg_sports/network/generic/api_service.dart';
 import 'package:tvg_sports/network/models/event.dart';
 
 abstract class EventDataSource {
-  getEvents();
+   Future<List<Event>> getEvents();
 }
 
 class EventRemoteDataSource extends EventDataSource {
   final ApiService apiService = ApiService.shared;
 
   @override
-  Future<void> getEvents() async {
+  Future<List<Event>> getEvents() async {
     try {
       // make api call and get an event response
       // We should replace the return statement with the actual logic to fetch events from the API.
       // For example:
       // final response = await apiService.fetchEvents();
       // return response.map((eventData) => Event.fromJson(eventData)).toList();
+
+      return Future.delayed(const Duration(seconds: 0), () {
+        return [];
+      });
     } catch (e) {
       throw e as Exception;
     }
@@ -30,24 +34,24 @@ class EventLocalDataSource extends EventDataSource {
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Milan vs. Munich',
-        'sportType': 'Football',
-        'dateStarting': 'Today',
+        'sportType': 'FootballToday',
+        'dateStarting': 'today',
         'timeStarting': '14:00',
       },
       {
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Milan vs. Munich',
-        'sportType': 'Football',
-        'dateStarting': 'Today',
+        'sportType': 'FootballYesterday',
+        'dateStarting': 'yesterday',
         'timeStarting': '14:00',
       },
       {
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Milan vs. Munich',
-        'sportType': 'Football',
-        'dateStarting': 'Today',
+        'sportType': 'FootballTomorrow',
+        'dateStarting': 'tomorrow',
         'timeStarting': '14:00',
       },
     ];

@@ -8,6 +8,7 @@ class DateTabBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
+      initialIndex: 1,
       length: 3,
       child: Container(
         color: CustomColors.mediumGrey,
