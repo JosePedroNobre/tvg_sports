@@ -1,3 +1,5 @@
+enum DateFilter { yesterday, today, tomorrow }
+
 class Event {
   String iconUrl;
   String league;

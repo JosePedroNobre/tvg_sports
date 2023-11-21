@@ -21,3 +21,9 @@ class EventScreenError extends EventScreenState {
   final String? message;
   const EventScreenError({this.message});
 }
+
+final class TabChanged extends EventScreenState {
+  final DateFilter dateFilter;
+
+  const TabChanged(this.dateFilter);
+}

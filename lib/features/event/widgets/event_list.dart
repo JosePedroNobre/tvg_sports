@@ -8,7 +8,9 @@ class EventList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return MediaQuery.removePadding(
+      context: context,
+      removeTop: true,
       child: ListView.builder(
           shrinkWrap: true,
           itemCount: events.length,
