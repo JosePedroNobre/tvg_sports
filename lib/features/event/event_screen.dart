@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tvg_sports/constants/custom_colors.dart';
 import 'package:tvg_sports/features/event/cubit/event_screen_cubit.dart';
-import 'package:tvg_sports/features/event/widgets/date_tab.dart';
+import 'package:tvg_sports/features/event/widgets/date_tab_bar.dart';
 import 'package:tvg_sports/features/event/widgets/event_list.dart';
 import 'package:tvg_sports/network/models/event.dart';
 
