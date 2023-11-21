@@ -32,7 +32,7 @@ flutter:
     - assets/icons/
 
   fonts:
-    - family: NibPro
+    - family: Inter
       fonts:
         - asset: fonts/Inter-Regular.ttf
           weight: 300

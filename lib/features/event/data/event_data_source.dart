@@ -52,7 +52,7 @@ class EventLocalDataSource extends EventDataSource {
       },
     ];
 
-    return Future.delayed(const Duration(seconds: 2), () {
+    return Future.delayed(const Duration(seconds: 0), () {
       return responses.map((response) => Event.fromJson(response)).toList();
     });
   }
