@@ -15,8 +15,7 @@ class EventScreenCubit extends Cubit<EventScreenState> {
       emit(EventScreenLoading());
       var allEvents = await repository.getEvents();
       var filteredEvents = allEvents.where((event) {
-        String eventDate = event.dateStarting;
-        return eventDate == dateFilter.name;
+        return event.dateStarting == dateFilter.name;
       }).toList();
 
       emit(EventScreenLoaded(filteredEvents));
