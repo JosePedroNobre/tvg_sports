@@ -1,16 +1,29 @@
-# tvg_sports
+**After opening the project for the first time or if Pubspec is updated do:**
 
-A new Flutter project.
+   1) `flutter clean`
+   2) `flutter pub get`
 
-## Getting Started
+RELEASES
 
-This project is a starting point for a Flutter application.
+**Run app** 
+`flutter run lib/main.dart`  
 
-A few resources to get you started if this is your first Flutter project:
+**Build app android** 
+`flutter build apk lib/main.dart`  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Build app ios** 
+`flutter build ios lib/main.dart`  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+TESTS
+
+**Run integration tests**
+`flutter test test/car_list_test.dart`
+
+
+iOS Demo            |  Detail Screen
+:-------------------------:|:-------------------------:
+
+
+https://github.com/JosePedroNobre/tvg_sports/assets/41454761/c04fc134-456b-48d2-b4f2-432c8a212364 | ![](https://user-images.githubusercontent.com/41454761/127077162-e7881478-af5a-407b-94bf-86457390e952.png)
+
