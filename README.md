@@ -15,12 +15,5 @@ RELEASES
 `flutter build ios lib/main.dart`  
 
 
-TESTS
-
-**Run integration tests**
-`flutter test test/event_list_test.dart`
-
-
-
 https://github.com/JosePedroNobre/tvg_sports/assets/41454761/c04fc134-456b-48d2-b4f2-432c8a212364 
 
