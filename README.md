@@ -1,4 +1,23 @@
-**After opening the project for the first time or if Pubspec is updated do:**
+## Project Architecture Overview
+
+1. **Network Layer**
+   - Implements a generic API service with CRUD methods.
+   - Includes interceptors for logging and support for JWT tokens and model serialization.
+
+2. **Repository Layer**
+   - Accepts a Data Source that can be either Local or Remote.
+   - Designed to enhance ease of testing.
+
+3. **Presentation Layer**
+   - Composed of screens and cubits.
+
+4. **Route Generator**
+   - Manages navigation within the app.
+
+5. **Custom Extensions**
+   - Provides custom extensions for classes and styles.
+
+## Getting Started
 
    1) `flutter clean`
    2) `flutter pub get`
