@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tvg_sports/constants/custom_colors.dart';
-import 'package:tvg_sports/features/event/widgets/event_item.dart';
+import 'package:tvg_sports/features/event/widgets/event_item_widget.dart';
 import 'package:tvg_sports/network/models/event.dart';
 
-class EventList extends StatelessWidget {
+class EventListWidget extends StatelessWidget {
   final List<Event> events;
-  const EventList({super.key, required this.events});
+  const EventListWidget({super.key, required this.events});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class EventList extends StatelessWidget {
         shrinkWrap: true,
         itemCount: events.length,
         itemBuilder: (context, index) {
-          return EventItem(event: events[index]);
+          return EventItemWidget(event: events[index]);
         });
   }
 }

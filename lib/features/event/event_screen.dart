@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:tvg_sports/constants/custom_colors.dart';
 import 'package:tvg_sports/features/event/cubit/event_screen_cubit.dart';
-import 'package:tvg_sports/features/event/widgets/date_tab_bar.dart';
-import 'package:tvg_sports/features/event/widgets/event_list.dart';
+import 'package:tvg_sports/features/event/widgets/app_bar_widget.dart';
+import 'package:tvg_sports/features/event/widgets/date_tab_bar_widget.dart';
+import 'package:tvg_sports/features/event/widgets/event_list_widget.dart';
 import 'package:tvg_sports/network/models/event.dart';
 
 class EventScreen extends StatelessWidget {
@@ -15,18 +14,19 @@ class EventScreen extends StatelessWidget {
     return SafeArea(
         child: Scaffold(
             backgroundColor: Colors.white,
-            appBar: AppBar(
-                bottom: PreferredSize(
-                  preferredSize: const Size.fromHeight(30.0),
-                  child: DateTabBar(
-                    onTabChange: (index) {
-                      context.read<EventScreenCubit>().getEvents(getDayToFetch(index));
-                    },
+            appBar: AppBarWidget(
+                appBarHeight: 80,
+                bottomContent: PreferredSize(
+                  preferredSize: const Size.fromHeight(50),
+                  child: SizedBox(
+                    height: 30,
+                    child: DateTabBarWidget(
+                      onTabChange: (index) {
+                        context.read<EventScreenCubit>().getEvents(getDayToFetch(index));
+                      },
+                    ),
                   ),
-                ),
-                centerTitle: true,
-                title: SvgPicture.asset('assets/icons/ic_tvg_logo.svg'),
-                backgroundColor: CustomColors.toolbarColor),
+                )),
             body: SingleChildScrollView(
               child: Column(
                 children: [_buildList(context)],
@@ -45,7 +45,7 @@ class EventScreen extends StatelessWidget {
             }
 
             if (state is EventScreenLoaded) {
-              return EventList(events: state.events);
+              return EventListWidget(events: state.events);
             }
 
             return const Text('Error loading data');

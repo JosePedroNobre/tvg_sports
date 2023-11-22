@@ -1,6 +1,7 @@
 enum DateFilter { yesterday, today, tomorrow }
 
 class Event {
+  int id;
   String iconUrl;
   String league;
   String teams;
@@ -11,6 +12,7 @@ class Event {
   Event({
     required this.iconUrl,
     required this.league,
+    required this.id,
     required this.teams,
     required this.sportType,
     required this.dateStarting,
@@ -18,6 +20,7 @@ class Event {
   });
 
   factory Event.fromJson(Map<String, dynamic> json) => Event(
+        id: json['id'],
         iconUrl: json['iconUrl'],
         league: json['league'],
         teams: json['teams'],
@@ -27,6 +30,7 @@ class Event {
       );
 
   Map<String, dynamic> toJson() => {
+        'id': id,
         'iconUrl': iconUrl,
         'league': league,
         'teams': teams,

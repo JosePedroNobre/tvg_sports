@@ -31,6 +31,7 @@ class EventLocalDataSource extends EventDataSource {
   Future<List<Event>> getEvents() {
     List<Map<String, dynamic>> responses = [
       {
+        'id': 1,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Porto vs. Braga',
@@ -39,6 +40,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 2,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -47,6 +49,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 3,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -55,6 +58,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 4,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -63,6 +67,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 5,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -71,6 +76,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 6,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -79,6 +85,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 7,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -87,6 +94,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 8,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -95,6 +103,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 9,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -103,6 +112,7 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 10,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
         'teams': 'Roma vs Inter',
@@ -111,14 +121,16 @@ class EventLocalDataSource extends EventDataSource {
         'timeStarting': '14:00',
       },
       {
+        'id': 11,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
-        'league': 'Portuguese Leage',
+        'league': 'Liga A',
         'teams': 'Portuguese Leage',
         'sportType': 'Football',
         'dateStarting': 'yesterday',
         'timeStarting': '14:00',
       },
       {
+        'id': 12,
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'League A',
         'teams': 'Granada vs Málaga',

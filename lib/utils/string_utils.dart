@@ -7,3 +7,17 @@ extension StringExtension on String {
     }
   }
 }
+
+extension StringSplitExtension on String {
+  List<String> splitAndTrim() {
+    return split(' ').map((e) => e.trim()).toList();
+  }
+
+  String get firstElement {
+    return splitAndTrim().isNotEmpty ? splitAndTrim().first : '';
+  }
+
+  String get secondElement {
+    return splitAndTrim().length > 1 ? splitAndTrim()[1] : '';
+  }
+}

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:tvg_sports/constants/custom_colors.dart';
 import 'package:tvg_sports/constants/styles.dart';
 
-class DateTabBar extends StatelessWidget {
+class DateTabBarWidget extends StatelessWidget {
   final Function(int)? onTabChange;
-  const DateTabBar({super.key, this.onTabChange});
+  const DateTabBarWidget({super.key, this.onTabChange});
 
   @override
   Widget build(BuildContext context) {

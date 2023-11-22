@@ -1,30 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:tvg_sports/constants/custom_colors.dart';
 import 'package:tvg_sports/constants/styles.dart';
 import 'package:tvg_sports/features/event/event_details_screen.dart';
 import 'package:tvg_sports/features/event/widgets/circular_widget.dart';
 import 'package:tvg_sports/network/models/event.dart';
 import 'package:tvg_sports/utils/string_utils.dart';
 
-class EventItem extends StatelessWidget {
+class EventItemWidget extends StatelessWidget {
   final Event event;
-  const EventItem({super.key, required this.event});
+  const EventItemWidget({super.key, required this.event});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 24, right: 24),
-      child: GestureDetector(
-        onTap: () {
-          Navigator.pushNamed(context, EventDetailsScreen.route);
-        },
+    return InkWell(
+      splashColor: CustomColors.lightBlue,
+      onTap: () {
+        Navigator.pushNamed(context, EventDetailsScreen.route, arguments: EventDetailsArgs(event));
+      },
+      child: Padding(
+        padding: const EdgeInsets.only(left: 24, right: 24),
         child: Padding(
           padding: const EdgeInsets.only(top: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SvgPicture.asset('assets/icons/ic_sports.svg'),
+              Image.network(event.iconUrl, width: 30, height: 30),
               const SizedBox(width: 15),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -42,7 +43,10 @@ class EventItem extends StatelessWidget {
                 ],
               ),
               const Spacer(),
-              const CircularWidget(title: 'Leage', division: 'B')
+              Hero(
+                tag: 'circular_widget_${event.id}',
+                child: CircularWidget(title: event.league.firstElement, division: event.league.secondElement),
+              ),
             ],
           ),
         ),

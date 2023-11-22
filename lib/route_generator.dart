@@ -8,7 +8,7 @@ class RouteGenerator {
     dynamic screen;
 
     switch (routeName) {
-      case '/':
+      case EventDetailsScreen.route:
         if (args is EventDetailsArgs) {
           screen = EventDetailsScreen(event: args.event!);
         }
