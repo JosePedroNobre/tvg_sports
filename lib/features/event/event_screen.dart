@@ -16,18 +16,21 @@ class EventScreen extends StatelessWidget {
         child: Scaffold(
             backgroundColor: Colors.white,
             appBar: AppBar(
+                bottom: PreferredSize(
+                  preferredSize: const Size.fromHeight(30.0),
+                  child: DateTabBar(
+                    onTabChange: (index) {
+                      context.read<EventScreenCubit>().getEvents(getDayToFetch(index));
+                    },
+                  ),
+                ),
                 centerTitle: true,
                 title: SvgPicture.asset('assets/icons/ic_tvg_logo.svg'),
                 backgroundColor: CustomColors.toolbarColor),
-            body: Column(
-              children: [
-                DateTabBar(
-                  onTabChange: (index) {
-                    context.read<EventScreenCubit>().getEvents(getDayToFetch(index)); // variable
-                  },
-                ),
-                _buildList(context)
-              ],
+            body: SingleChildScrollView(
+              child: Column(
+                children: [_buildList(context)],
+              ),
             )));
   }
 

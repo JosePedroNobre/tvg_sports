@@ -4,6 +4,7 @@ import 'package:tvg_sports/features/event/cubit/event_screen_cubit.dart';
 import 'package:tvg_sports/features/event/data/event_data_source.dart';
 import 'package:tvg_sports/features/event/data/event_repository.dart';
 import 'package:tvg_sports/features/event/event_screen.dart';
+import 'package:tvg_sports/route_generator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         title: appTitle,
+        onGenerateRoute: RouteGenerator.generateRoute,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,

@@ -6,4 +6,5 @@ extension CustomColors on Colors {
   static const lightBlue = Color(0xffE7F4F8);
   static const lightGrey = Color(0xff565F69);
   static const mediumGrey = Color(0xffF3F3F3);
+  static const dividerGrey = Color(0xffF0F0F0);
 }

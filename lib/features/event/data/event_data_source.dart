@@ -2,7 +2,7 @@ import 'package:tvg_sports/network/generic/api_service.dart';
 import 'package:tvg_sports/network/models/event.dart';
 
 abstract class EventDataSource {
-   Future<List<Event>> getEvents();
+  Future<List<Event>> getEvents();
 }
 
 class EventRemoteDataSource extends EventDataSource {
@@ -33,24 +33,96 @@ class EventLocalDataSource extends EventDataSource {
       {
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
-        'teams': 'Milan vs. Munich',
-        'sportType': 'FootballToday',
+        'teams': 'Porto vs. Braga',
+        'sportType': 'Football',
         'dateStarting': 'today',
         'timeStarting': '14:00',
       },
       {
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
-        'teams': 'Milan vs. Munich',
-        'sportType': 'FootballYesterday',
-        'dateStarting': 'yesterday',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
         'timeStarting': '14:00',
       },
       {
         'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
         'league': 'Serie A',
-        'teams': 'Milan vs. Munich',
-        'sportType': 'FootballTomorrow',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'Serie A',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'Serie A',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'Serie A',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'Serie A',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'Serie A',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'Serie A',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'Serie A',
+        'teams': 'Roma vs Inter',
+        'sportType': 'Football',
+        'dateStarting': 'today',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'Portuguese Leage',
+        'teams': 'Portuguese Leage',
+        'sportType': 'Football',
+        'dateStarting': 'yesterday',
+        'timeStarting': '14:00',
+      },
+      {
+        'iconUrl': 'https://cdn-icons-png.flaticon.com/512/2158/2158416.png',
+        'league': 'League A',
+        'teams': 'Granada vs Málaga',
+        'sportType': 'Football',
         'dateStarting': 'tomorrow',
         'timeStarting': '14:00',
       },
