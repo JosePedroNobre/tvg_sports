@@ -15,5 +15,5 @@ RELEASES
 `flutter build ios lib/main.dart`  
 
 
-https://github.com/JosePedroNobre/tvg_sports/assets/41454761/c04fc134-456b-48d2-b4f2-432c8a212364 
+https://github.com/JosePedroNobre/tvg_sports/assets/41454761/390e2247-6220-4098-af03-279402acdadc
 
