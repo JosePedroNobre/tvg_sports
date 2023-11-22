@@ -21,9 +21,6 @@ TESTS
 `flutter test test/car_list_test.dart`
 
 
-iOS Demo            |  Detail Screen
-:-------------------------:|:-------------------------:
 
-
-https://github.com/JosePedroNobre/tvg_sports/assets/41454761/c04fc134-456b-48d2-b4f2-432c8a212364 | ![](https://user-images.githubusercontent.com/41454761/127077162-e7881478-af5a-407b-94bf-86457390e952.png)
+https://github.com/JosePedroNobre/tvg_sports/assets/41454761/c04fc134-456b-48d2-b4f2-432c8a212364 
 
