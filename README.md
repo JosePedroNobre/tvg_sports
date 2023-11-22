@@ -18,7 +18,7 @@ RELEASES
 TESTS
 
 **Run integration tests**
-`flutter test test/car_list_test.dart`
+`flutter test test/event_list_test.dart`
 
 
 
