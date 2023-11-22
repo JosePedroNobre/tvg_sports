@@ -22,7 +22,7 @@
    1) `flutter clean`
    2) `flutter pub get`
 
-RELEASES
+## How to run
 
 **Run app** 
 `flutter run lib/main.dart`  
@@ -33,6 +33,7 @@ RELEASES
 **Build app ios** 
 `flutter build ios lib/main.dart`  
 
+## Example
 
 https://github.com/JosePedroNobre/tvg_sports/assets/41454761/390e2247-6220-4098-af03-279402acdadc
 
