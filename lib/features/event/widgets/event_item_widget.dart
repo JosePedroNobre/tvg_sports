@@ -25,7 +25,7 @@ class EventItemWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.network(event.iconUrl, width: 30, height: 30),
+              Image.network(event.iconUrl, width: 46, height: 46),
               const SizedBox(width: 15),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
