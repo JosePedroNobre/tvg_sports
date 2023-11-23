@@ -36,7 +36,7 @@ class EventScreen extends StatelessWidget {
 
   _buildList(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 16),
+      padding: const EdgeInsets.only(top: 16,bottom: 20),
       child: BlocBuilder<EventScreenCubit, EventScreenState>(
           bloc: context.read<EventScreenCubit>()..getEvents(DateFilter.today), // default
           builder: (context, state) {

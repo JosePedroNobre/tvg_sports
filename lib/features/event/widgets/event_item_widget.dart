@@ -20,10 +20,10 @@ class EventItemWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(left: 24, right: 24),
         child: Padding(
-          padding: const EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.only(top: 5),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.network(event.iconUrl, width: 30, height: 30),
               const SizedBox(width: 15),
