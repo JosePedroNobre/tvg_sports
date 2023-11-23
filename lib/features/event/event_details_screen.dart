@@ -35,7 +35,7 @@ class EventDetailsScreen extends StatelessWidget {
               const SizedBox(height: 15),
               Text(
                 '${event.dateStarting.capitalizeFirstLetter()} | ${event.timeStarting}',
-                style: inter(fontWeight: FontWeight.bold, fontSize: 10, color: Colors.black),
+                style: inter(fontWeight: FontWeight.bold, fontSize: 11, color: Colors.black),
               ),
               const SizedBox(height: 5),
               Text(

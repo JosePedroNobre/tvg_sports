@@ -33,7 +33,7 @@ class EventItemWidget extends StatelessWidget {
                 children: [
                   Text(
                     '${event.dateStarting.capitalizeFirstLetter()} | ${event.timeStarting}',
-                    style: inter(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 10),
+                    style: inter(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 11),
                   ),
                   const SizedBox(height: 5),
                   Text(
