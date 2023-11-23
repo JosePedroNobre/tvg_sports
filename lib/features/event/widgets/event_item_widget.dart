@@ -18,7 +18,7 @@ class EventItemWidget extends StatelessWidget {
         Navigator.pushNamed(context, EventDetailsScreen.route, arguments: EventDetailsArgs(event));
       },
       child: Padding(
-        padding: const EdgeInsets.only(left: 24, right: 24),
+        padding: const EdgeInsets.only(left: 24, right: 24,top: 10,bottom: 10),
         child: Padding(
           padding: const EdgeInsets.only(top: 5),
           child: Row(
@@ -33,7 +33,7 @@ class EventItemWidget extends StatelessWidget {
                 children: [
                   Text(
                     '${event.dateStarting.capitalizeFirstLetter()} | ${event.timeStarting}',
-                    style: inter(fontWeight: FontWeight.w700, color: Colors.black, fontSize: 10),
+                    style: inter(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 10),
                   ),
                   const SizedBox(height: 5),
                   Text(

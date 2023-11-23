@@ -23,7 +23,7 @@ class EventDetailsScreen extends StatelessWidget {
       appBar: const AppBarWidget(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 16,right: 16),
+          padding: const EdgeInsets.only(left: 16, right: 16),
           child: SizedBox(
             width: double.infinity,
             child: Column(children: [
@@ -35,7 +35,7 @@ class EventDetailsScreen extends StatelessWidget {
               const SizedBox(height: 15),
               Text(
                 '${event.dateStarting.capitalizeFirstLetter()} | ${event.timeStarting}',
-                style: inter(fontWeight: FontWeight.w700, fontSize: 10, color: Colors.black),
+                style: inter(fontWeight: FontWeight.bold, fontSize: 10, color: Colors.black),
               ),
               const SizedBox(height: 5),
               Text(
